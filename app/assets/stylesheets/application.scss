@@ -1,4 +1,5 @@
 @import "./reset";
-@import "./mixin/_clearfix";
+@import "./mixin/clearfix";
+@import "config/colors";
 @import "./modules/*";
 @import "font-awesome";
