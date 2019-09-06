@@ -1,0 +1,35 @@
+.chat
+  .header
+    .left-header
+      .left-header__title
+        tell
+      .left-header__members
+        .menmber
+          member:test-name
+    .right-header
+      .right-header__button
+        Edit
+
+  .messages
+    .message
+      .upper-message
+        .upper-message__user-name
+          たいち
+        .upper-message__date
+          2019/09/06 16:06
+      .lower-message
+        .lower-message__content
+          はらたつー
+
+  -# .form
+  -#   = form_for |@group, @message| do |f|
+  -#     = f.text_field :body, class: 'form__message', placeholder: "type a message"
+  -#       = f.label :image, class: 'form__mask' do
+  -#       = fa_icon 'image', class: 'form__mask__image'
+  -#       = f.file_field :image, class: 'hidden'
+  -#     = f.submit 'Send', class: 'form__submit'
+  %form{:action => "/", :method => "post"}
+    %input{:name => "text", :size => "40", :placeholder => "type a message"}
+    %i.fa.fa-image
+    .form__btn
+      %span Send
