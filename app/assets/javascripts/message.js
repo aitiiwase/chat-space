@@ -67,7 +67,7 @@ $(function() {
         return html;
       }
       
-      var api_url = '/groups/' + `${group_id}` + '/api/messages';
+      var api_url = '/groups/' + "${group_id}" + '/api/messages';
       $.ajax({
         url: api_url,
         type: 'GET',
@@ -76,7 +76,7 @@ $(function() {
       })
   
       .done(function(messages) {
-        console.log('success')
+        alert.log('success')
         var insertHTML = '';
         if (messages.length !== 0) {
           messages.forEach(function(message) {  //前回の通信時から追加されたmessageを一つずつ取り出す
@@ -88,7 +88,7 @@ $(function() {
       })
   
       .fail(function() {
-        console.log('error')
+        alert.log('error')
       })
     }
   };
