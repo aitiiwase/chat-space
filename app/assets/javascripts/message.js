@@ -67,7 +67,7 @@ $(function() {
         return html;
       }
       
-      var api_url = '/groups/' + "${group_id}" + '/api/messages';
+      var api_url = "/groups/" + "${group_id}" + "/api/messages";
       $.ajax({
         url: api_url,
         type: 'GET',
