@@ -1,14 +1,17 @@
 .chat
   .header
     .left-header
-      .left-header__title
-        tell
-      .left-header__members
-        .menmber
-          member:test-name
+      .left-header__title{data: {'group-id' => "#{@group.id}"}}
+        = @group.name
+      %ul.left-header__members
+        %li.left-header__menmbers--menmber
+          member:
+          - @group.users.each do |user|
+            = user.name
+
     .right-header
       .right-header__button
-        Edit
+        = link_to "Edit", edit_group_path(@group.id)
 
   .messages
     = render @messages
