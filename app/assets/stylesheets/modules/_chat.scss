@@ -83,60 +83,6 @@
       }
     }
   }
-
-  // .form {
-  //   box-sizing: border-box;
-  //   position: fixed;
-  //   bottom: 0;
-  //   right: 0;
-  //   padding: 0 40px;
-  //   height: 90px;
-  //   background-color: #dcdcdc;
-  //   width: calc(100% - 300px);
-  //   .new_message{
-  //     margin-top: 20px;
-  //   }
-  //   &__message {
-  //     // display: block;
-  //     // float: left;
-  //     position: relative;
-  //     top: 0;
-  //     left: 0px;
-  //     width: calc(100% - 205px);
-  //     height: 50px;
-  //   }
-  //   &__mask {
-  //     background-color: $white;
-  //     float: left;
-  //     position: relative;
-  //     top: 1px;
-  //     left: calc(100% - 205px);
-  //     height: 49px;
-  //     padding-right: 10px;
-  //     &__image {
-  //       font-size: 20px;
-  //       line-height: 50px;
-  //     }
-  //     .hidden {
-  //       display: none;
-  //       font-size: 20px;
-  //       line-height: 50px;
-  //     }
-  //   }
-  //   &__submit {
-  //     background-color: $light_blue;
-  //     float: right;
-  //     position: relative;
-  //     top: 0;
-  //     right: 30px;
-  //     border: none;
-  //     color: $white;
-  //     font-size: 16px;
-  //     height: 50px;
-  //     margin-left: 15px;
-  //     padding: 0 30px;
-  //   }
-  // }
 }
 
 .form {
@@ -152,8 +98,6 @@
     margin-top: 20px;
   }
   &__message {
-    // display: block;
-    // float: left;
     position: relative;
     top: 0;
     left: 0px;
